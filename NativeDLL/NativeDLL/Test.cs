@@ -8,13 +8,8 @@ using System.Runtime.InteropServices;
 
 namespace NativeDLL
 {
-    public interface ITest
-    {
-        bool isEqual(string value1, string value2);
-    }
-
     [ClassInterface(ClassInterfaceType.None)]
-    public class Test : ITest
+    public class Test
     {
         public Test() { }
 
