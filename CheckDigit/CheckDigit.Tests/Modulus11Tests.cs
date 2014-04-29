@@ -15,15 +15,15 @@ namespace CheckDigit.Tests
             string expectedCheckDigit;
             string checkdigit;
 
-            number = "3214020082778300190055001000005971122014397";
-            expectedCheckDigit = "4";
+            number = "036532";
+            expectedCheckDigit = "7";
             var mod11 = new Modulus11();
-            checkdigit = mod11.GetCheckDigit(number);
+            checkdigit = mod11.CalculateCheckDigit(number);
             Assert.AreEqual(expectedCheckDigit, checkdigit);
 
             number = "3214041306259400010755001000001039113062594";
             expectedCheckDigit = "7";
-            checkdigit = mod11.GetCheckDigit(number);
+            checkdigit = mod11.CalculateCheckDigit(number);
             Assert.AreEqual(expectedCheckDigit, checkdigit);
         }
     }
