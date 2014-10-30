@@ -2,15 +2,16 @@
 
 namespace FeedMaluco
 {
-    public class Post
+    struct Post
     {
         public string Titulo { get; private set; }
         public string Conteudo { get; private set; }
 
         public Post(string titulo, string conteudo)
+            : this()
         {
-            this.Titulo = titulo;
-            this.Conteudo = conteudo;
+            Titulo = titulo;
+            Conteudo = conteudo;
         }
     }
 }
