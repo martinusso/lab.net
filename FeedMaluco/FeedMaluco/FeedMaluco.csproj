@@ -51,9 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BuscadorPosts.cs" />
+    <Compile Include="Carteiro.cs" />
     <Compile Include="Post.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Remetente.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
