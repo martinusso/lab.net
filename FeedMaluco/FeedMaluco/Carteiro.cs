@@ -17,8 +17,8 @@ namespace FeedMaluco
 
         public string EnviarEmail() 
         {
-            SmtpClient client = new SmtpClient(Remetente.SmtpHost, Remetente.SmtpPort);
-            client.EnableSsl = Remetente.SmtpUseSSL;
+            SmtpClient client = new SmtpClient(Remetente.Smtp.Host, Remetente.Smtp.Port);
+            client.EnableSsl = Remetente.Smtp.UseSSL;
             client.UseDefaultCredentials = false;
             client.Credentials = new System.Net.NetworkCredential(Remetente.Email, Remetente.Senha);
 

@@ -23,7 +23,8 @@ namespace FeedMaluco
 
         static private void EnviarEmail(Post post)
         {
-            var remetente = new Remetente("EMAIL@gmail.com", "SENHA", "Breno Martinusso", "smtp.gmail.com", 25, true);
+            var remetente = new Remetente("EMAIL@gmail.com", "SENHA", "Breno Martinusso", 
+                new Smtp("smtp.gmail.com", 25, true));
             string destinatario = "martinusso@gmail.com";
 
             Console.WriteLine(String.Format("Enviando o e-mail '{0}' para '{1}'", post.Titulo, destinatario));

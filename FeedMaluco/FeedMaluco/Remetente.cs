@@ -7,21 +7,15 @@ namespace FeedMaluco
         public string Email { get; private set; }
         public string Nome { get; private set; }
         public string Senha { get; private set; }
+        public Smtp Smtp { get; private set; }
 
-        public string SmtpHost { get; private set; }
-        public int SmtpPort { get; private set; }
-        public Boolean SmtpUseSSL { get; private set; }
-
-        public Remetente(string email, string senha, string nome, string smtpHost, int smtpPort, Boolean smtpUseSSL)
+        public Remetente(string email, string senha, string nome, Smtp smtp)
             : this()
         {
             Email = email;
             Nome = nome;
             Senha = senha;
-
-            SmtpHost = smtpHost;
-            SmtpPort = smtpPort;
-            SmtpUseSSL = smtpUseSSL;
+            Smtp = smtp;
         }
     }
 }
